@@ -1,4 +1,4 @@
-name: Run shell commands
+name: Test Workflow
 
 on:
   push:
@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display the output of the echo commands
-        run: echo "This is the first iteration”
+        run: |
+          set -x
+          echo "This is the first iteration"
