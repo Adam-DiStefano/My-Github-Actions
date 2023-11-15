@@ -1,0 +1,12 @@
+name: Run shell commands
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my-first-shell-execution:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display the output of the echo commands
+        run: echo "This is the first iteration"
