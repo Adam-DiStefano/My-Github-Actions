@@ -1,0 +1,13 @@
+name: Test Workflow
+
+on:
+  push:
+  
+jobs:
+  my-first-shell-execution:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display the output of the echo commands
+        run: |
+          set -x
+          echo "This is the first iteration"
